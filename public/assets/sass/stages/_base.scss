@@ -1,0 +1,199 @@
+
+@import "home/base";
+@import "services/base";
+@import "friends/base";
+@import "contact/base";
+@import "about/base";
+
+#stage {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+  z-index:-1;
+
+  .scene {
+    height:100%;
+    min-height:100%;
+    padding:0;
+    margin:0;
+
+    .layer {
+      position:absolute;
+      top:0;
+      left:0;
+
+      &:nth-child(1) {
+        div {
+          animation-delay:0ms;
+          animation-duration: 1200ms;
+        }
+      }
+      &:nth-child(2) {
+        div {
+          animation-delay:350ms;
+          animation-duration: 550ms;
+          bottom:-5%;
+        }
+      }
+      &:nth-child(3) {
+        div {
+          animation-delay:0ms;
+          animation-duration: 250ms;
+          right:-5%;
+          bottom:-5%;
+        }
+      }
+      &:nth-child(4) {
+        div {
+          animation-delay:100ms;
+          animation-duration: 250ms;
+          left:-5%;
+          bottom:-5%;
+        }
+      }
+      &:nth-child(5) {
+        div {
+          animation-delay:0ms;
+          animation-duration: 450ms;
+          left:-5%;
+          right:-5%;
+          bottom:-5%;
+        }
+      }
+      &:nth-child(6) {
+        div {
+          animation-delay:0ms;
+          animation-duration: 450ms;
+        }
+      }
+      &:nth-child(7) {
+        div {
+          animation-delay:250ms;
+          animation-duration: 650ms;
+        }
+      }
+      &:nth-child(8) {
+        div {
+          animation-delay:450ms;
+          animation-duration: 650ms;
+        }
+      }
+
+      div {
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        transition-timing-function: ease;
+        animation-fill-mode: both;
+      }
+
+      :nth-child(1) {
+        background-size:cover !important;
+      }
+
+      &:not(:nth-child(1)) {
+        div {
+          background-size:contain !important;
+          opacity:1;
+        }
+      }
+    }
+
+    li {
+      height:100%;
+      min-height:100%;
+      width:100%;
+      display:block;
+    }
+  }
+
+  &.clear-stage {
+    .layer:nth-child(1) {
+      div {
+        animation-name: fadeOut;
+      }
+    }
+    .layer:nth-child(2) {
+      div {
+        animation-name: clearBottom;
+      }
+    }
+    .layer:nth-child(3) {
+      div {
+        animation-name: clearRight;
+      }
+    }
+    .layer:nth-child(4) {
+      div {
+        animation-name: clearLeft;
+      }
+    }
+    .layer:nth-child(5) {
+      div {
+        animation-name: clearBottom;
+      }
+    }
+    .layer:nth-child(6) {
+      div {
+        animation-name: clearTop;
+      }
+    }
+    .layer:nth-child(7) {
+      div {
+        animation-name: clearTop;
+      }
+    }
+    .layer:nth-child(8) {
+      div {
+        animation-name: clearTop;
+      }
+    }
+  }
+  &.build-stage {
+    .layer:nth-child(1) {
+      div {
+        animation-name: fadeIn;
+      }
+    }
+    .layer:nth-child(2) {
+      div {
+        animation-name: buildBottom;
+      }
+    }
+    .layer:nth-child(3) {
+      div {
+        animation-name: buildRight;
+      }
+    }
+    .layer:nth-child(4) {
+      div {
+        animation-name: buildLeft;
+      }
+    }
+    .layer:nth-child(5) {
+      div {
+        animation-name: buildBottom;
+      }
+    }
+    .layer:nth-child(6) {
+      div {
+        animation-name: buildTop;
+      }
+    }
+    .layer:nth-child(7) {
+      div {
+        animation-name: buildTop;
+      }
+    }
+    .layer:nth-child(8) {
+      div {
+        animation-name: buildTop;
+      }
+    }
+  }
+}

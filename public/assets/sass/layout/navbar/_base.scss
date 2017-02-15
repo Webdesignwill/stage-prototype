@@ -1,0 +1,24 @@
+
+#navbar {
+  margin-top:10%;
+  ul {
+    padding:0;
+    margin:0;
+    li {
+      list-style:none;
+      display:inline;
+      margin-right:10px;
+      a {
+        text-decoration:none;
+      }
+      &:not(.active) {
+        a {
+          color:$black;
+        }
+      }
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+}

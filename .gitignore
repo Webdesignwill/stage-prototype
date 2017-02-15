@@ -1,0 +1,10 @@
+npm-debug.log
+node_modules
+.DS_Store
+dist
+*.log
+coverage
+.idea
+.tmp
+.sass-cache
+lib/

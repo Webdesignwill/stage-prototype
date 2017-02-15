@@ -1,0 +1,45 @@
+
+.stage-home {
+  .scene {
+    .layer:nth-child(1) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-1.png') no-repeat top center;
+      }
+    }
+    .layer:nth-child(2) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-2.png') no-repeat bottom center;
+      }
+    }
+    .layer:nth-child(3) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-3.png') no-repeat bottom right;
+      }
+    }
+    .layer:nth-child(4) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-4.png') no-repeat bottom left;
+      }
+    }
+    .layer:nth-child(5) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-5.png') no-repeat bottom center;
+      }
+    }
+    .layer:nth-child(6) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-6.png') no-repeat top center;
+      }
+    }
+    .layer:nth-child(7) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-7.png') no-repeat top center;
+      }
+    }
+    .layer:nth-child(8) {
+      div {
+        background:transparent url('/assets/img/pages/home/layer-8.png') no-repeat top center;
+      }
+    }
+  }
+}

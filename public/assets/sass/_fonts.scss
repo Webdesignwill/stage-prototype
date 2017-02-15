@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/icomoon.eot?-9fspou');
+  src:url('../fonts/icomoon/icomoon.eot?#iefix-9fspou') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.woff?-9fspou') format('woff'),
+  url('../fonts/icomoon/icomoon.ttf?-9fspou') format('truetype'),
+  url('../fonts/icomoon/icomoon.svg?-9fspou#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SocialGlyphs';
+  src: url('../fonts/reason/socialglyphs-webfont.eot');
+  src: url('../fonts/reason/socialglyphs-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/reason/socialglyphs-webfont.woff') format('woff'),
+  url('../fonts/reason/socialglyphs-webfont.ttf') format('truetype'),
+  url('../fonts/reason/socialglyphs-webfont.svg#SocialGlyphsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoText-Light';
+  src: url('../fonts/webdesignwill/2E23CB_0_0.eot');
+  src: url('../fonts/webdesignwill/2E23CB_0_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webdesignwill/2E23CB_0_0.woff2') format('woff2'),
+  url('../fonts/webdesignwill/2E23CB_0_0.woff') format('woff'),
+  url('../fonts/webdesignwill/2E23CB_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CoText-Regular';
+  src: url('../fonts/webdesignwill/2E23CB_1_0.eot');
+  src: url('../fonts/webdesignwill/2E23CB_1_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webdesignwill/2E23CB_1_0.woff2') format('woff2'),
+  url('../fonts/webdesignwill/2E23CB_1_0.woff') format('woff'),
+  url('../fonts/webdesignwill/2E23CB_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'socicon';
+  src: url('../fonts/socicon/socicon.eot');
+  src: url('../fonts/socicon/socicon.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/socicon/socicon.woff') format('woff'),
+  url('../fonts/socicon/socicon.woff2') format('woff2'),
+  url('../fonts/socicon/socicon.ttf') format('truetype'),
+  url('../fonts/socicon/socicon.svg#sociconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
+}
+
+// https://www.google.com/fonts#UsePlace:use/Collection:Gloria+Hallelujah
+@import url(//fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: attr(data-icon);
+}
+
+.icon-logo-large:before {
+  content: "\e600";
+}

@@ -1,0 +1,51 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $black;
+  font-family: $colight;
+}
+
+body, html {
+  height:100%;
+  min-height:100%;
+}
+
+.app {
+  overflow:hidden;
+}
+
+#app-content {
+  height: 50%;
+  margin-top: calc(45% / 2);
+}
+
+.page {
+  animation-duration: 300ms;
+  transition-timing-function: linear;
+  animation-fill-mode: both;
+  &.fade-out {
+    animation-name: fadeOut;
+    animation-delay:0ms;
+  }
+  &.fade-in {
+    animation-name: fadeIn;
+    animation-delay:1s;
+  }
+}
+
+/*
+
+Example taken from : https://css-tricks.com/rems-ems/
+
+So containers are set in rem and the text in the center is in em
+
+.articles, .sections, larger blocks {
+  font-size:1.2rem;
+}
+h2, .smaller, .elements {
+  font-size: 2em;
+}
+
+*/

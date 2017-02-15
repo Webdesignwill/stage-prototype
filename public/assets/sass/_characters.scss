@@ -1,0 +1,25 @@
+.ch {
+  display:block;
+}
+.ch-full {
+  @extend .ch;
+  height: 390px;
+  width:  244px;
+}
+
+.finch-full { 
+  @extend .ch-full;
+  background: url('../img/characters/finch-full.png') no-repeat center center;
+}
+.finch-space-full {
+  @extend .ch-full;
+  background: url('../img/characters/finch-space-full.png') no-repeat center center;
+}
+.sybil-full {
+  @extend .ch-full;
+  background: url('../img/characters/sybil-full.png') no-repeat center center;
+}
+.hattrick-full {
+  @extend .ch-full;
+  background: url('../img/characters/hattrick-full.png') no-repeat center center;
+}

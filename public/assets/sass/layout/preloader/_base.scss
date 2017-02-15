@@ -1,0 +1,29 @@
+.preloader {
+  background:#000;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:5000;
+  .contact {
+    margin-left:-30px;
+  }
+  h1 {
+    width: 300px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+  h1, p, a {
+    color: white;
+  }
+  .middle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -122px;
+    margin-top: -195px;
+    text-align:center;
+  }
+}
